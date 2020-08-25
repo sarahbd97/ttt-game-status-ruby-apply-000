@@ -22,7 +22,7 @@ def won?(board)
 end
 
 def full?(board)
-  
+
 end
 
 def draw?(board)
