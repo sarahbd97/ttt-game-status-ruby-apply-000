@@ -17,20 +17,12 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
-    win_combination.all? do |win_index|
-      board[win_index] == "X"
-    end
-    if true
-      return win_combination
-    else
-      false
+    
   end
 end
 
 def full?(board)
-  board.all? do |position|
-    position == "X" || position == "0"
-  end
+  
 end
 
 def draw?(board)
