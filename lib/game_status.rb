@@ -24,10 +24,8 @@ def won?(board)
   return false
 end
 
-
-
 def full?(board)
-
+  board.none? {|position| position == " " || position == nil}
 end
 
 def draw?(board)
