@@ -28,8 +28,8 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |position|
-    position == "X" || position == "O"
+  board.none? do |position|
+    position == " " || position == nil
   end
 end
 
