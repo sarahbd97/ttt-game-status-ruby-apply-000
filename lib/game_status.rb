@@ -21,15 +21,16 @@ def won?(board)
       position = board[win_index]
       if position == "X"
         return win_combination
-      else
-        false
+      elsif position == "O"
+        return win_combination
+      end
     end
   end
 end
 
 def full?(board)
-  board.none? do |position|
-    position == " " || position == nil
+  board.all? do |position|
+    position == "X" || position == "0"
   end
 end
 
