@@ -17,9 +17,15 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
-    
+    if board[win_combination].all == "X"
+      return win_combination
+    else
+      false
+    end
   end
 end
+
+
 
 def full?(board)
 
