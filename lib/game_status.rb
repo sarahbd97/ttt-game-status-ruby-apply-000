@@ -16,11 +16,15 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-
+  WIN_COMBINATIONS.each do |win_combination|
+    return win_combination
+  end
 end
 
 def full?(board)
-
+  board.all? do |position|
+    position_taken?(board,position)
+  end
 end
 
 def draw?(board)
