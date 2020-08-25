@@ -44,5 +44,9 @@ def over?(board)
 end
 
 def winner(board)
-
+  if !won?(board)
+    return false
+  else
+    return true
+  end
 end
